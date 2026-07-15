@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Complaint Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Complaint Form</h1>
+    </header>
+
+    <div class="form-container">
+        <p>Please fill out the form below to submit your complaint. All fields are required.</p>
+    <form >
+        
+        <label for="emp-name" class="labels"><strong>Employee Name:</strong></label>
+        <br>
+        <input type="text" name="employee_firstname" placeholder="First Name" required> 
+        <input type="text" name="employee_lastname"  placeholder="Last Name" required><br><br>
+
+        <label for="emp-id" class="labels"><strong>Employee ID:</strong></label>
+        <br>
+        <input type="text" name="employee_id" required><br><br>
+
+        <label for="emp-department" class="labels"><strong>Department:</strong></label>
+        <br>
+        <input type="text" name="department" required><br><br>  
+
+        <label for="emp-position" class="labels"><strong>Position:</strong></label>
+        <br>
+        <input type="text" name="position" required><br><br>
+
+        <label for="date" class="labels"><strong>Date of Incident:</strong></label>
+        <br>
+        <input type="date" name="date" required><br><br>
+
+        <label for="nature" class="labels"><strong>Nature of Complaint:</strong></label>
+        <br>
+
+        <input type="radio" id="workplace-safety" name="nature" value="workplace-safety" required>
+        <label for="workplace-safety">Workplace Safety Concerns</label>
+        <br>
+        <input type="radio" id="discrimination" name="nature" value="discrimination" required>
+        <label for="discrimination">Discrimination</label>
+        <br>
+        <input type="radio" id="conflicts" name="nature" value="conflicts" required>
+        <label for="conflicts">Conflicts with Co-workers</label>
+        <br>
+        <input type="radio" id="harassment" name="nature" value="harassment" required>
+        <label for="harassment">Harassment</label>
+        <br>
+        <input type="radio" id="other" name="nature" value="other" required><label for="other">Other</label><br><br>
+
+        <label for="complaint-details" class="labels"><strong>Complaint Details:</strong></label>
+        <br>
+        <textarea name="complaint_details" placeholder="Please provide details of your complaint..." rows="5" cols="38" required></textarea><br><br>
+
+        <input type="checkbox" name="acknowledgment" required><label for="acknowledgment">I acknowledge that the information provided in this complaint is accurate and truthful to the best of my knowledge.</label><br><br>
+        
+        <input class="submit-btn" type="submit" value="Submit">
+
+    </form>
+    </div>
+
+</body>
+</html>

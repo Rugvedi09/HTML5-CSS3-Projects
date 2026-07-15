@@ -1,0 +1,186 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body{
+    background-color: #d0e6c7;
+    padding: 20px;
+}
+
+/* Heading */
+h1{
+    text-align: center;
+    color: #351515;
+    font-size: 2rem;
+    padding: 15px;
+    background-color: #b9e4a8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    background: #eefae9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Paragraph */
+p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Labels */
+.labels{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    margin: 15px 0 8px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #b4cfb8;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus,
+textarea:focus{
+    border-color: #376538;
+}
+
+/* Radio Buttons */
+input[type="radio"]{
+    accent-color: #376538;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+input[type="radio"] + label{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Checkbox */
+input[type="checkbox"]{
+    accent-color: #376538;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+/* General Label */
+label{
+    color: #333;
+    cursor: pointer;
+}
+
+/* Button */
+.submit-btn{
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    margin: 30px auto 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #376538;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover{
+    background-color: #2e4b2f;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    h1{
+        font-size:1.7rem;
+    }
+
+    .form-container{
+        padding:25px;
+    }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:480px){
+
+    body{
+        padding:10px;
+    }
+
+    h1{
+        font-size:1.3rem;
+        padding:12px;
+    }
+
+    p{
+        font-size:14px;
+    }
+
+    .form-container{
+        padding:18px;
+        border-radius:10px;
+    }
+
+    .labels{
+        font-size:14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .submit-btn{
+        width:100%;
+        font-size:15px;
+    }
+}
